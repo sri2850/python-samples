@@ -34,3 +34,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      
+      - name: Cleanup
+        run: make clean
+      
+      - name: Run tests
+        run: make test
+        
+      - name: Prepare Build
+        run: make build
